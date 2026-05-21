@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rage Click Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1> Rage Click Tracker</h1>
+
+    <!-- Stats -->
+    <div class="stats">
+
+      <div class="box">
+        <h2>Total Clicks</h2>
+        <p id="totalClicks">0</p>
+      </div>
+
+      <div class="box">
+        <h2>Most Clicked</h2>
+        <p id="mostClicked">None</p>
+      </div>
+
+    </div>
+    <div id="buttonGrid" class="button-grid"></div>
+
+    <!-- update status -->
+    <div class="history-box">
+      <h2>Click History</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+    <!-- Reset -->
+    <button id="resetBtn" class="reset-btn">
+      Reset Data
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

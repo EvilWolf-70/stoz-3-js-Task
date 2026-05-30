@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Manager</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-6xl mx-auto">
+      <!-- <div
+        class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 my-4 rounded-lg relative"
+      >
+        <strong class="font-bold">Warning!</strong>
+        <span class="block sm:inline"> Please check your input.</span>
+      </div> -->
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold text-indigo-600">📚 Library Manager</h1>
+
+        <button
+          id="addBookBtn"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg shadow"
+        >
+          + Add Book
+        </button>
+      </div>
+
+      <!-- Add/Edit Form -->
+      <div class="bg-white p-6 rounded-2xl shadow-lg mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Add / Edit Book</h2>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-4" id="bookForm">
+          <!-- Book Title -->
+          <div>
+            <label class="block text-gray-700 mb-2">Book Title</label>
+            <input
+              data="bookTitle"
+              id="bookTitle"
+              type="text"
+              placeholder="Enter title"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+
+          <!-- Author -->
+          <div>
+            <label class="block text-gray-700 mb-2">Author</label>
+            <input 
+              id="author"
+              type="text"
+              placeholder="Enter author"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+
+          <!-- Category -->
+          <div>
+            <label class="block text-gray-700 mb-2">Category</label>
+            <input
+              type="text"
+              id="category"
+              placeholder="Programming / Science / History"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+
+          <!-- Price -->
+          <div>
+            <label class="block text-gray-700 mb-2">Price</label>
+            <input
+              type="number"
+              id="price"
+              placeholder="Enter price"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+          </div>
+
+          <!-- Buttons -->
+          <div class="md:col-span-2 flex gap-4 mt-4">
+            <button
+              type="submit"
+              class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow"
+            >
+              Save Book
+            </button>
+
+            <button
+              id=""
+              type="reset"
+              class="bg-gray-400 hover:bg-gray-500 text-white px-6 py-2 rounded-lg shadow"
+            >
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Search -->
+      <div class="mb-6">
+          <button id="getBooks"
+              class="flex-1 bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg"
+            >
+              Get Books
+            </button>
+      </div>
+
+      <!-- Books Display -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        id="booksContainer"
+      >
+       
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

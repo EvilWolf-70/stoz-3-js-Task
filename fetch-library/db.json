@@ -1,0 +1,26 @@
+{
+  "books": [
+    {
+      "title": "life of water",
+      "author": "danials",
+      "category": "story",
+      "price": 45,
+      "id": "Q29rX926Ct4"
+    },
+    {
+      "id": "GqfOZ3PQJgc",
+      "title": "LIfe of forest",
+      "author": "jasmine",
+      "category": "Nature",
+      "price": 67
+    },
+    {
+      "id": "67TQXQIqjA0",
+      "title": "Cloud Computing with AWS",
+      "author": "Mathew",
+      "category": "coding",
+      "price": 500
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
